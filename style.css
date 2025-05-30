@@ -15,3 +15,14 @@
 #pseud:hover{
     color:blue
 }
+#submit{
+    text-align: center;
+    padding: 5px;
+    margin-left: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+#submit:hover{
+    background-color: chocolate;
+}
