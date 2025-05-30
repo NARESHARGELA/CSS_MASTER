@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title> CSS overview</title>
 </head>
+
 <body>
     <section>
         <ol>
@@ -31,11 +33,134 @@
         <h1>Box Model</h1>
         <div>
             <p>There are four main word in box model those are margin, border,padding and content</p>
-            <p>content goes to center of box and padding is space btw border and content and border is a border and margin is refarence to frame of ui</p>
+            <p>content goes to center of box and padding is space btw border and content and border is a border and
+                margin is refarence to frame of ui</p>
             <p>Suppose let's take example of a content like submit content</p>
             <button id="submit"> submit</button>
             <p>Here some imporntant thing is box-sizing : border-box is used for to adjust width and height</p>
         </div>
     </section>
+    <br>
+    <hr>
+    <section class="laysec">
+        <h1>LAYOUTS</h1>
+        <p>There are four different types of layouts in css</p>
+        <ol>
+            <li>FlexBox</li>
+            <li>Grid</li>
+            <li>Dispaly</li>
+            <li>Positioning </li>
+        </ol>
+        <div class="layouts">
+            <div>
+                <h3>FlexBox</h3>
+                <p>Lets take a flex container then we have to observe the key properties like </p>
+                <p>🔷 Think of Flexbox as a 1-dimensional layout system. It helps you lay out items in a single row or
+                    column (like a row of boxes). <br>
+                    🔷 It’s great for:
+
+                    Navigation bars
+
+                    Centering content
+
+                    Responsive elements in a row <br>
+
+                    🔧 Key properties: <br>
+
+                    display: flex → turns a container into a flex container<br>
+
+                    flex-direction → row or column layout<br>
+
+                    justify-content → horizontal alignment (left, right, center, space-between, etc.)<br>
+
+                    align-items → vertical alignment (top, bottom, center, stretch)<br>
+
+                    gap → spacing between flex items<br>
+
+                    flex-wrap → wrap items to new line if needed</p>
+                <container>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </container>
+            </div>
+            <div>
+                <h3>Grid</h3>
+                <p>🔷 CSS Grid is a 2-dimensional layout system. It allows you to create complex layouts both in rows
+                    and columns — like a spreadsheet! <br>
+                    🔷 It’s great for: <br>
+
+                    Page layouts
+
+                    Image galleries
+
+                    Dashboard UIs <br>
+
+                    🔧 Key properties: <br>
+
+                    display: grid → turns a container into a grid <br>
+
+                    grid-template-columns → define column sizes <br>
+
+                    grid-template-rows → define row sizes <br>
+
+                    gap → spacing between grid items <br>
+
+                    grid-column / grid-row → position items in specific rows/columns <br>
+
+                    justify-items / align-items → alignment of items inside cells</p>
+
+                <div class="container">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
+            </div>
+            <div>
+                <h3>Positioning</h3>
+                <p>Positioning is how you place an element relative to the page or other elements.
+                    🔷 It’s very helpful for overlays, pop-ups, or custom layouts.
+
+                    🔧 Types of position: <br>
+
+                    static (default) → normal flow <br>
+
+                    relative → relative to its normal position <br>
+
+                    absolute → relative to nearest positioned ancestor <br>
+
+                    fixed → relative to viewport (like sticky header) <br>
+
+                    sticky → toggles between relative & fixed as you scroll </p>
+            </div>
+            <div>
+                <h3>Display</h3>
+                <p>🔷 The display property defines how an element is displayed in the page.
+                    🔷 It’s the most basic way to control layout: <br>
+
+                    display: block → takes full width, new line (e.g., div, p) <br>
+
+                    display: inline → no new line, only as much width as needed (e.g., span, a) <br>
+
+                    display: inline-block → combines block & inline <br>
+
+                    display: none → hide element <br>
+
+                    display: flex → turns into flex container <br>
+
+                    display: grid → turns into grid container</p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
